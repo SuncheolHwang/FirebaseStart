@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FirebaseStart</string>
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">260466468990384</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb260466468990384</string>
+
+    <!-- Twitter consumer key and secret -->
+    <string name="twitter_consumer_key" translatable="false">pCEy3neLtQlMfMGTlr4IzaSgB</string>
+    <string name="twitter_consumer_secret" translatable="false">YBRLuSqHUyFqZSprWk5adBmDec2mOhHiGEgwBSaFkpoV6IaUkS</string>
+
+</resources>

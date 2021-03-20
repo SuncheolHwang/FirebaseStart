@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".firestore.FirestoreActivity">
+
+    <Button
+        android:id="@+id/firestoreAddDataBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="데이터 추가"
+        app:layout_constraintBottom_toTopOf="@+id/firestoreSetDataBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/firestoreSetDataBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="데이터 추가 (Set)"
+        app:layout_constraintBottom_toTopOf="@+id/firestoreDelteFieldBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/firestoreDeleteDocBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="데이터 삭제 (문서)"
+        app:layout_constraintBottom_toTopOf="@+id/firestoreDelteFieldBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firestoreSetDataBtn" />
+
+    <Button
+        android:id="@+id/firestoreDelteFieldBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="데이터 삭제 (필드)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/firestoreSeldataBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="데이터 조회 (문서)"
+        app:layout_constraintBottom_toTopOf="@+id/firestoreSelWhereDataBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firestoreDelteFieldBtn" />
+
+    <Button
+        android:id="@+id/firestoreSelWhereDataBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="데이터 조회 (문서 - where)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firestoreDelteFieldBtn" />
+
+    <Button
+        android:id="@+id/firestoreListenerDataBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="데이터 조회 (실시간 업데이트)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firestoreSelWhereDataBtn" />
+
+    <Button
+        android:id="@+id/firestoreListenerQueryDataBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="데이터 조회 (실시간 업데이트 - 쿼리)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firestoreListenerDataBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
